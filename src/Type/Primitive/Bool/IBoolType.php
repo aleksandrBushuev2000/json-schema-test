@@ -1,10 +1,9 @@
 <?php
 
 
-namespace Type;
+namespace Type\Primitive\Bool;
 
 
-interface IBoolType extends IPrimitiveType
-{
+use Type\Primitive\IPrimitiveType;
 
-}
+interface IBoolType extends IPrimitiveType {}
