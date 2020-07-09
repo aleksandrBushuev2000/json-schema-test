@@ -1,21 +1,23 @@
 <?php
 
 
-namespace Type\Primitive\String;
+namespace AleksandrBuhsuev\Schema\Type\Primitive\String;
 
 
-use Type\Primitive\IPrimitiveType;
+use AleksandrBuhsuev\Schema\CheckResult;
+use AleksandrBuhsuev\Schema\Error\TypeMismatchError;
+use AleksandrBuhsuev\Schema\Visitor\IVisitor;
 
-use Visitor\IVisitor;
-
-class StringType implements IPrimitiveType
+class StringType implements IStringType
 {
 
-    function check(&$variable) {
-        return is_string($variable);
+    public function check($input): CheckResult {
+        return is_string($input)
+            ? new CheckResult(true)
+            : new CheckResult(false, new TypeMismatchError("string", gettype($input)));
     }
 
-    function accept(IVisitor $visitor, &$variable) {
-        $visitor->visitPrimitive($this, $variable);
+    public function accept(IVisitor $visitor, &$input) {
+        $visitor->visitPrimitive($this, $input);
     }
 }

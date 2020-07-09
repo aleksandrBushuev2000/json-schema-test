@@ -1,18 +1,16 @@
 <?php
 
+namespace AleksandrBushuev\Schema\Visitor;
 
-namespace Visitor;
-
-
-use Type\Arr\IArrayType;
-use Type\Object\IObjectFieldType;
-use Type\Object\IObjectType;
-use Type\Primitive\IPrimitiveType;
+use AleksandrBushuev\Schema\Object\SchemaObject;
+use AleksandrBushuev\Schema\Type\Arr\IArrayType;
+use AleksandrBushuev\Schema\Type\ObjectField\ObjectField;
+use AleksandrBushuev\Schema\Type\Primitive\IPrimitive;
 
 interface IVisitor
 {
-    public function visitObject(IObjectType $type, & $variable);
-    public function visitField(IObjectFieldType $type, & $variable);
-    public function visitArray(IArrayType $type, & $variable);
-    public function visitPrimitive(IPrimitiveType $type, & $variable);
+    public function visitArray(IArrayType $array, $input) : void;
+    public function visitField(ObjectField $field, $input) : void;
+    public function visitObject(SchemaObject $object, $input) : void;
+    public function visitPrimitive(IPrimitive $primitive, $input) : void;
 }

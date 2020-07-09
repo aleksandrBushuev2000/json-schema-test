@@ -1,14 +1,12 @@
 <?php
 
+namespace AleksandrBuhsuev\Schema\Type;
 
-namespace Type;
-
-
-use Visitor\IVisitor;
+use AleksandrBuhsuev\Schema\CheckResult;
+use AleksandrBuhsuev\Schema\Visitor\IVisitor;
 
 interface ISchemaType
 {
-    function check(& $variable);
-
-    function accept(IVisitor $visitor, & $variable);
+    public function check($input) : CheckResult;
+    public function accept(IVisitor $visitor, & $input);
 }

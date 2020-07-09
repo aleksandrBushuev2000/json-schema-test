@@ -1,19 +1,22 @@
 <?php
 
+namespace AleksandrBuhsuev\Schema\Type\Primitive\Bool;
 
-namespace Type\Primitive\Bool;
+use AleksandrBuhsuev\Schema\Error\TypeMismatchError;
+use AleksandrBuhsuev\Schema\Type\Primitive\IPrimitive;
+use AleksandrBuhsuev\Schema\CheckResult;
+use AleksandrBuhsuev\Schema\Visitor\IVisitor;
 
-
-use Visitor\IVisitor;
-
-class BoolType implements IBoolType
+class BoolType implements IPrimitive
 {
 
-    function check(&$variable) {
-        return $variable === true || $variable === false;
+    public function check($input): CheckResult {
+        return is_bool($input)
+            ? new CheckResult(true)
+            : new CheckResult(false, new TypeMismatchError("bool", gettype($input)));
     }
 
-    function accept(IVisitor $visitor, & $variable) {
-        $visitor->visitPrimitive($visitor, $variable);
+    public function accept(IVisitor $visitor, &$input) {
+        $visitor->visitPrimitive($this, $input);
     }
 }

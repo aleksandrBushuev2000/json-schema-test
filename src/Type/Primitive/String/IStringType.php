@@ -1,12 +1,7 @@
 <?php
 
+namespace AleksandrBuhsuev\Schema\Type\Primitive\String;
 
-namespace Type\Primitive\String;
+use AleksandrBuhsuev\Schema\Type\Primitive\IPrimitive;
 
-
-use Type\Primitive\IPrimitiveType;
-
-interface IStringType extends IPrimitiveType
-{
-
-}
+interface IStringType extends IPrimitive {}

@@ -1,11 +1,10 @@
 <?php
 
+namespace AleksandrBuhsuev\Schema\Type\Arr;
 
-namespace Type\Arr;
-
-use Type\ISchemaType;
+use AleksandrBuhsuev\Schema\Type\ISchemaType;
 
 interface IArrayType extends ISchemaType
 {
-    public function getItemType() : ISchemaType;
+    public function getChildType() : ISchemaType;
 }
