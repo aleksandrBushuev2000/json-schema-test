@@ -1,11 +1,10 @@
 <?php
 
 
-namespace Builder;
+namespace AleksandrBushuev\Schema\Builder;
 
 
-use Type\Object\SchemaObject;
-use Type\ISchemaType;
+use AleksandrBushuev\Schema\Type\Object\SchemaObject;
 
 class ObjectBuilder implements ISchemaTypeBuilder
 {
@@ -22,7 +21,7 @@ class ObjectBuilder implements ISchemaTypeBuilder
         $this->obj = new SchemaObject($fields);
     }
 
-    public function getType(): ISchemaType {
+    public function getType(): SchemaObject {
         return $this->obj;
     }
 }

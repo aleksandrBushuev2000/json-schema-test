@@ -1,12 +1,12 @@
 <?php
 
 
-namespace Type\Arr;
+namespace AleksandrBushuev\Schema\Type\Arr;
 
 
-use CheckResult;
-use Type\ISchemaType;
-use Visitor\IVisitor;
+use AleksandrBushuev\Schema\CheckResult;
+use AleksandrBushuev\Schema\Type\ISchemaType;
+use AleksandrBushuev\Schema\Visitor\IVisitor;
 
 abstract class ArrayRangeDecorator implements IArrayType
 {

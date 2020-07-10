@@ -1,11 +1,11 @@
 <?php
 
 
-namespace Type\Primitive\String;
+namespace AleksandrBushuev\Schema\Type\Primitive\String;
 
 
-use CheckResult;
-use Visitor\IVisitor;
+use AleksandrBushuev\Schema\CheckResult;
+use AleksandrBushuev\Schema\Visitor\IVisitor;
 
 abstract class StringRangeDecorator implements IStringType
 {

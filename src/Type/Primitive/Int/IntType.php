@@ -1,12 +1,12 @@
 <?php
 
 
-namespace Type\Primitive\Int;
+namespace AleksandrBushuev\Schema\Type\Primitive\Int;
 
 
-use CheckResult;
-use Error\TypeMismatchError;
-use Visitor\IVisitor;
+use AleksandrBushuev\Schema\CheckResult;
+use AleksandrBushuev\Schema\Error\TypeMismatchError;
+use AleksandrBushuev\Schema\Visitor\IVisitor;
 
 
 class IntType implements IIntType

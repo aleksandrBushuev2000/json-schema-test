@@ -1,26 +1,30 @@
 {
-    "name": "aleksandr-bushuev/json-schema-test",
-    "type": "library",
-    "version": "0.0.1",
-    "description": "A library that allows you to check JSON for compliance with the scheme",
-    "license": "MIT",
     "authors": [
         {
             "name": "Aleksandr Bushuev",
             "email": "aleksandr.bushuev2000@gmail.com"
         }
     ],
+    "autoload": {
+        "psr-4": {
+            "AleksandrBushuev\\Schema\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "AleksandrBushuev\\Schema\\Tests\\": "tests/"
+        }
+    },
+    "description": "A library that allows you to check JSON for compliance with the scheme",
+    "license": "MIT",
+    "name": "aleksandr-bushuev/json-schema-test",
     "require": {
-        "php" : "7.4.*",
-        "ext-json" : "*"
+        "php": "7.4.*",
+        "ext-json": "*"
     },
     "require-dev": {
         "phpunit/phpunit": "^9.2"
     },
-    "autoload": {
-        "AleksandrBushuev\\Schema\\" : "/src"
-    },
-    "autoload-dev": {
-        "AleksandrBushuev\\Schema\\Tests\\" : "/tests"
-    }
+    "type": "library",
+    "version": "0.0.1"
 }

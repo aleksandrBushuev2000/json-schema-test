@@ -1,9 +1,9 @@
 <?php
 
 
-namespace Type\Primitive\Double;
+namespace AleksandrBushuev\Schema\Type\Primitive\Double;
 
 
-use Type\Primitive\IPrimitive;
+use AleksandrBushuev\Schema\Type\Primitive\IPrimitive;
 
 interface IDoubleType extends IPrimitive {}

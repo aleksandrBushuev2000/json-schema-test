@@ -1,10 +1,9 @@
 <?php
 
 
-namespace Builder;
+namespace AleksandrBushuev\Schema\Builder;
 
-use Type\ISchemaType;
-use Type\Primitive\Bool\BoolType;
+use AleksandrBushuev\Schema\Type\Primitive\Bool\BoolType;
 
 class BoolBuilder implements ISchemaTypeBuilder
 {
@@ -14,7 +13,7 @@ class BoolBuilder implements ISchemaTypeBuilder
         $this->bool = new BoolType();
     }
 
-    public function getType(): ISchemaType {
+    public function getType(): BoolType {
         return $this->bool;
     }
 }

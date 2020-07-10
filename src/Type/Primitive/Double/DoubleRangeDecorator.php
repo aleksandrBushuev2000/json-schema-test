@@ -1,12 +1,12 @@
 <?php
 
 
-namespace Type\Primitive\Double;
+namespace AleksandrBushuev\Schema\Type\Primitive\Double;
 
 
-use CheckResult;
-use Type\Primitive\NumericRangeDecorator;
-use Visitor\IVisitor;
+use AleksandrBushuev\Schema\CheckResult;
+use AleksandrBushuev\Schema\Type\Primitive\NumericRangeDecorator;
+use AleksandrBushuev\Schema\Visitor\IVisitor;
 
 abstract class DoubleRangeDecorator extends NumericRangeDecorator implements IDoubleType
 {

@@ -1,12 +1,12 @@
 <?php
 
 
-namespace Type\Primitive\Double;
+namespace AleksandrBushuev\Schema\Type\Primitive\Double;
 
 
-use CheckResult;
-use Error\TypeMismatchError;
-use Visitor\IVisitor;
+use AleksandrBushuev\Schema\CheckResult;
+use AleksandrBushuev\Schema\Error\TypeMismatchError;
+use AleksandrBushuev\Schema\Visitor\IVisitor;
 
 
 class DoubleType implements IDoubleType

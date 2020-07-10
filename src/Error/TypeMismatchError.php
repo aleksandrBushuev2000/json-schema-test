@@ -1,6 +1,6 @@
 <?php
 
-namespace Error;
+namespace AleksandrBushuev\Schema\Error;
 
 class TypeMismatchError implements IError
 {

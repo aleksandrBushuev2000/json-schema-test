@@ -1,11 +1,11 @@
 <?php
 
-namespace Type\Primitive\Bool;
+namespace AleksandrBushuev\Schema\Type\Primitive\Bool;
 
-use Error\TypeMismatchError;
-use Type\Primitive\IPrimitive;
-use CheckResult;
-use Visitor\IVisitor;
+use AleksandrBushuev\Schema\Error\TypeMismatchError;
+use AleksandrBushuev\Schema\Type\Primitive\IPrimitive;
+use AleksandrBushuev\Schema\CheckResult;
+use AleksandrBushuev\Schema\Visitor\IVisitor;
 
 class BoolType implements IPrimitive
 {

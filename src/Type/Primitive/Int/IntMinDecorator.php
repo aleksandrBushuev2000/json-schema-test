@@ -1,11 +1,11 @@
 <?php
 
 
-namespace Type\Primitive\Int;
+namespace AleksandrBushuev\Schema\Type\Primitive\Int;
 
 
-use CheckResult;
-use Error\CustomError;
+use AleksandrBushuev\Schema\CheckResult;
+use AleksandrBushuev\Schema\Error\CustomError;
 
 class IntMinDecorator extends IntRangeDecorator
 {

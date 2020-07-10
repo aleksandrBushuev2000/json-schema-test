@@ -1,13 +1,14 @@
 <?php
 
 
-namespace Builder;
+namespace AleksandrBushuev\Schema\Builder;
 
 
-use Type\ISchemaType;
-use Type\Primitive\Double\DoubleMaxDecorator;
-use Type\Primitive\Double\DoubleMinDecorator;
-use Type\Primitive\Double\DoubleType;
+use AleksandrBushuev\Schema\Type\ISchemaType;
+use AleksandrBushuev\Schema\Type\Primitive\Double\DoubleMaxDecorator;
+use AleksandrBushuev\Schema\Type\Primitive\Double\DoubleMinDecorator;
+use AleksandrBushuev\Schema\Type\Primitive\Double\DoubleType;
+use AleksandrBushuev\Schema\Type\Primitive\Double\IDoubleType;
 
 class DoubleBuilder implements ISchemaTypeBuilder
 {
@@ -27,7 +28,7 @@ class DoubleBuilder implements ISchemaTypeBuilder
         return $this;
     }
 
-    public function getType(): ISchemaType {
+    public function getType(): IDoubleType {
         return $this->double;
     }
 }

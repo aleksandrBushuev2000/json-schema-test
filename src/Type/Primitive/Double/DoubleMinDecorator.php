@@ -1,11 +1,11 @@
 <?php
 
 
-namespace Type\Primitive\Double;
+namespace AleksandrBushuev\Schema\Type\Primitive\Double;
 
 
-use CheckResult;
-use Error\CustomError;
+use AleksandrBushuev\Schema\CheckResult;
+use AleksandrBushuev\Schema\Error\CustomError;
 
 class DoubleMinDecorator extends DoubleRangeDecorator
 {

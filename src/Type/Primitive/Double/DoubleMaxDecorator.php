@@ -1,14 +1,13 @@
 <?php
 
 
-namespace Type\Primitive\Double;
+namespace AleksandrBushuev\Schema\Type\Primitive\Double;
 
-use Error\CustomError;
-use CheckResult;
+use AleksandrBushuev\Schema\Error\CustomError;
+use AleksandrBushuev\Schema\CheckResult;
 
 class DoubleMaxDecorator extends DoubleRangeDecorator
 {
-
     public function checkRange($input): CheckResult {
         return $input <= $this->number
             ? new CheckResult(true)

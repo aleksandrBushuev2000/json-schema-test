@@ -1,11 +1,11 @@
 <?php
 
-namespace Type\ObjectField;
+namespace AleksandrBushuev\Schema\Type\ObjectField;
 
-use CheckResult;
-use Error\CustomError;
-use Type\ISchemaType;
-use Visitor\IVisitor;
+use AleksandrBushuev\Schema\CheckResult;
+use AleksandrBushuev\Schema\Error\CustomError;
+use AleksandrBushuev\Schema\Type\ISchemaType;
+use AleksandrBushuev\Schema\Visitor\IVisitor;
 
 use stdClass;
 
@@ -62,7 +62,7 @@ class ObjectField implements ISchemaType
             : $this->checkInArray($input);
     }
 
-    public function checkInArray(array $input) {
+    private function checkInArray(array $input) {
         return isset($input[$this->key])
             ? new CheckResult(true)
             : new CheckResult(false, new CustomError("Missing Field: ".$this->key));

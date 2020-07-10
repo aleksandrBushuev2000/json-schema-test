@@ -1,12 +1,12 @@
 <?php
 
 
-namespace Type\Primitive\String;
+namespace AleksandrBushuev\Schema\Type\Primitive\String;
 
 
-use CheckResult;
-use Error\CustomError;
-use Visitor\IVisitor;
+use AleksandrBushuev\Schema\CheckResult;
+use AleksandrBushuev\Schema\Error\CustomError;
+use AleksandrBushuev\Schema\Visitor\IVisitor;
 
 class StringRegexDecorator implements IStringType
 {

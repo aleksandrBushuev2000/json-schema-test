@@ -1,15 +1,14 @@
 <?php
 
 
-namespace Builder;
+namespace AleksandrBushuev\Schema\Builder;
 
 
-use Type\ISchemaType;
-use Type\Primitive\String\IStringType;
-use Type\Primitive\String\StringMaxDecorator;
-use Type\Primitive\String\StringMinDecorator;
-use Type\Primitive\String\StringRegexDecorator;
-use Type\Primitive\String\StringType;
+use AleksandrBushuev\Schema\Type\Primitive\String\IStringType;
+use AleksandrBushuev\Schema\Type\Primitive\String\StringMaxDecorator;
+use AleksandrBushuev\Schema\Type\Primitive\String\StringMinDecorator;
+use AleksandrBushuev\Schema\Type\Primitive\String\StringRegexDecorator;
+use AleksandrBushuev\Schema\Type\Primitive\String\StringType;
 
 class StringBuilder implements ISchemaTypeBuilder
 {
@@ -34,7 +33,7 @@ class StringBuilder implements ISchemaTypeBuilder
         return $this;
     }
 
-    public function getType(): ISchemaType {
+    public function getType(): IStringType {
         return $this->string;
     }
 }

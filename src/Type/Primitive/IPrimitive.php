@@ -1,7 +1,7 @@
 <?php
 
-namespace Type\Primitive;
+namespace AleksandrBushuev\Schema\Type\Primitive;
 
-use Type\ISchemaType;
+use AleksandrBushuev\Schema\Type\ISchemaType;
 
 interface IPrimitive extends ISchemaType { }

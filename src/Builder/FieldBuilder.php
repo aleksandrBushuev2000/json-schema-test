@@ -1,11 +1,10 @@
 <?php
 
 
-namespace Builder;
+namespace AleksandrBushuev\Schema\Builder;
 
 
-use Type\ISchemaType;
-use Type\ObjectField\ObjectField;
+use AleksandrBushuev\Schema\Type\ObjectField\ObjectField;
 
 class FieldBuilder implements ISchemaTypeBuilder
 {
@@ -25,7 +24,7 @@ class FieldBuilder implements ISchemaTypeBuilder
         return $this;
     }
 
-    public function getType(): ISchemaType {
+    public function getType(): ObjectField {
         return $this->field;
     }
 }

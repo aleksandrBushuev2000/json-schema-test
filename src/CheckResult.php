@@ -1,6 +1,8 @@
 <?php
 
-use Error\IError;
+namespace AleksandrBushuev\Schema;
+
+use AleksandrBushuev\Schema\Error\IError;
 
 class CheckResult
 {

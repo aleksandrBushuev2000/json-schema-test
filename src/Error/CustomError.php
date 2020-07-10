@@ -1,7 +1,7 @@
 <?php
 
 
-namespace Error;
+namespace AleksandrBushuev\Schema\Error;
 
 
 class CustomError implements IError

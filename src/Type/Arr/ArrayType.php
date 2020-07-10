@@ -1,14 +1,14 @@
 <?php
 
 
-namespace Type\Arr;
+namespace AleksandrBushuev\Schema\Type\Arr;
 
 
-use CheckResult;
-use Error\AssocArrayError;
-use Type\ISchemaType;
-use Error\TypeMismatchError;
-use Visitor\IVisitor;
+use AleksandrBushuev\Schema\CheckResult;
+use AleksandrBushuev\Schema\Error\AssocArrayError;
+use AleksandrBushuev\Schema\Type\ISchemaType;
+use AleksandrBushuev\Schema\Error\TypeMismatchError;
+use AleksandrBushuev\Schema\Visitor\IVisitor;
 
 class ArrayType implements IArrayType
 {

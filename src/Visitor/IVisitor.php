@@ -1,11 +1,11 @@
 <?php
 
-namespace Visitor;
+namespace AleksandrBushuev\Schema\Visitor;
 
-use Type\Object\SchemaObject;
-use Type\Arr\IArrayType;
-use Type\ObjectField\ObjectField;
-use Type\Primitive\IPrimitive;
+use AleksandrBushuev\Schema\Type\Object\SchemaObject;
+use AleksandrBushuev\Schema\Type\Arr\IArrayType;
+use AleksandrBushuev\Schema\Type\ObjectField\ObjectField;
+use AleksandrBushuev\Schema\Type\Primitive\IPrimitive;
 
 interface IVisitor
 {
