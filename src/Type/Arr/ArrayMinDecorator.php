@@ -1,11 +1,11 @@
 <?php
 
 
-namespace AleksandrBushuev\Schema\Type\Arr;
+namespace Type\Arr;
 
 
-use AleksandrBushuev\Schema\CheckResult;
-use AleksandrBushuev\Schema\Error\CustomError;
+use CheckResult;
+use Error\CustomError;
 
 class ArrayMinDecorator extends ArrayRangeDecorator
 {

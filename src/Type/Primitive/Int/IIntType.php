@@ -1,9 +1,9 @@
 <?php
 
 
-namespace AleksandrBushuev\Schema\Type\Primitive\Int;
+namespace Type\Primitive\Int;
 
 
-use AleksandrBushuev\Schema\Type\Primitive\IPrimitive;
+use Type\Primitive\IPrimitive;
 
 interface IIntType extends IPrimitive {}

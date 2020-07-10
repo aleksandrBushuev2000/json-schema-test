@@ -1,7 +1,7 @@
 <?php
 
 
-namespace AleksandrBushuev\Schema\Error;
+namespace Error;
 
 
 class AssocArrayError implements IError

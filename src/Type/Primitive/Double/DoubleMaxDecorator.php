@@ -1,10 +1,10 @@
 <?php
 
 
-namespace AleksandrBushuev\Schema\Type\Primitive\Double;
+namespace Type\Primitive\Double;
 
-use AleksandrBushuev\Schema\Error\CustomError;
-use AleksandrBushuev\Schema\CheckResult;
+use Error\CustomError;
+use CheckResult;
 
 class DoubleMaxDecorator extends DoubleRangeDecorator
 {

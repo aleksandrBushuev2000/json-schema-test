@@ -1,14 +1,14 @@
 <?php
 
 
-namespace AleksandrBushuev\Schema\Type\Arr;
+namespace Type\Arr;
 
 
-use AleksandrBushuev\Schema\CheckResult;
-use AleksandrBushuev\Schema\Error\AssocArrayError;
-use AleksandrBushuev\Schema\Type\ISchemaType;
-use AleksandrBushuev\Schema\Error\TypeMismatchError;
-use AleksandrBushuev\Schema\Visitor\IVisitor;
+use CheckResult;
+use Error\AssocArrayError;
+use Type\ISchemaType;
+use Error\TypeMismatchError;
+use Visitor\IVisitor;
 
 class ArrayType implements IArrayType
 {
@@ -32,7 +32,7 @@ class ArrayType implements IArrayType
         return new CheckResult(true);
     }
 
-    public function accept(IVisitor $visitor, & $input) : void {
+    public function accept(IVisitor $visitor, $input) : void {
         $visitor->visitArray($this, $input);
     }
 }

@@ -1,10 +1,10 @@
 <?php
 
 
-namespace AleksandrBushuev\Schema\Builder;
+namespace Builder;
 
-use AleksandrBushuev\Schema\Type\ISchemaType;
-use AleksandrBushuev\Schema\Type\Primitive\Bool\BoolType;
+use Type\ISchemaType;
+use Type\Primitive\Bool\BoolType;
 
 class BoolBuilder implements ISchemaTypeBuilder
 {

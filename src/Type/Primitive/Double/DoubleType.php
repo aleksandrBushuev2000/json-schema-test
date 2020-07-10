@@ -1,12 +1,12 @@
 <?php
 
 
-namespace AleksandrBushuev\Schema\Type\Primitive\Double;
+namespace Type\Primitive\Double;
 
 
-use AleksandrBushuev\Schema\CheckResult;
-use AleksandrBushuev\Schema\Error\TypeMismatchError;
-use AleksandrBushuev\Schema\Visitor\IVisitor;
+use CheckResult;
+use Error\TypeMismatchError;
+use Visitor\IVisitor;
 
 
 class DoubleType implements IDoubleType
@@ -18,7 +18,7 @@ class DoubleType implements IDoubleType
             : new CheckResult(false, new TypeMismatchError("double", gettype($input)));
     }
 
-    public function accept(IVisitor $visitor, &$input) {
+    public function accept(IVisitor $visitor, $input) {
         $visitor->visitPrimitive($this, $input);
     }
 }

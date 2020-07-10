@@ -1,12 +1,12 @@
 <?php
 
 
-namespace AleksandrBushuev\Schema\Type\Primitive\String;
+namespace Type\Primitive\String;
 
 
-use AleksandrBushuev\Schema\CheckResult;
-use AleksandrBushuev\Schema\Error\CustomError;
-use AleksandrBushuev\Schema\Visitor\IVisitor;
+use CheckResult;
+use Error\CustomError;
+use Visitor\IVisitor;
 
 class StringRegexDecorator implements IStringType
 {
@@ -32,7 +32,7 @@ class StringRegexDecorator implements IStringType
         }
     }
 
-    public function accept(IVisitor $visitor, &$input) {
+    public function accept(IVisitor $visitor, $input) {
         $visitor->visitPrimitive($this, $input);
     }
 }

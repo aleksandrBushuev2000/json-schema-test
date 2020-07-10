@@ -1,11 +1,11 @@
 <?php
 
 
-namespace AleksandrBushuev\Schema\Type\Primitive\Int;
+namespace Type\Primitive\Int;
 
 
-use AleksandrBushuev\Schema\CheckResult;
-use AleksandrBushuev\Schema\Error\CustomError;
+use CheckResult;
+use Error\CustomError;
 
 class IntMaxDecorator extends IntRangeDecorator
 {

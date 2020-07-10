@@ -1,11 +1,11 @@
 <?php
 
 
-namespace AleksandrBushuev\Schema\Type\Primitive\String;
+namespace Type\Primitive\String;
 
 
-use AleksandrBushuev\Schema\CheckResult;
-use AleksandrBushuev\Schema\Visitor\IVisitor;
+use CheckResult;
+use Visitor\IVisitor;
 
 abstract class StringRangeDecorator implements IStringType
 {
@@ -24,7 +24,7 @@ abstract class StringRangeDecorator implements IStringType
             : $result;
     }
 
-    public function accept(IVisitor $visitor, &$input) {
+    public function accept(IVisitor $visitor, $input) {
         $visitor->visitPrimitive($this, $input);
     }
 

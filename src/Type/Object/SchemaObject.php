@@ -1,15 +1,15 @@
 <?php
 
 
-namespace AleksandrBushuev\Schema\Object;
+namespace Type\Object;
 
 
-use AleksandrBushuev\Schema\CheckResult;
-use AleksandrBushuev\Schema\Error\TypeMismatchError;
-use AleksandrBushuev\Schema\Type\ObjectField\ObjectField;
-use AleksandrBushuev\Schema\Visitor\IVisitor;
+use CheckResult;
+use Error\TypeMismatchError;
+use Type\ObjectField\ObjectField;
+use Visitor\IVisitor;
 
-use AleksandrBushuev\Schema\Type\ISchemaType;
+use Type\ISchemaType;
 
 use stdClass;
 
@@ -17,9 +17,9 @@ class SchemaObject implements ISchemaType
 {
 
     /**
-     * @var array<ObjectField>
+     * @var ObjectField[]
     */
-    private $fields = [];
+    private array $fields;
 
     /**
      * @return array<ObjectField>
@@ -46,7 +46,7 @@ class SchemaObject implements ISchemaType
         }
     }
 
-    public function accept(IVisitor $visitor, & $input) {
+    public function accept(IVisitor $visitor, $input) {
         $visitor->visitObject($this, $input);
     }
 }

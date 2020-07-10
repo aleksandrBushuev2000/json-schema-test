@@ -1,14 +1,14 @@
 <?php
 
 
-namespace AleksandrBushuev\Schema\Builder;
+namespace Builder;
 
 
-use AleksandrBushuev\Schema\Type\Arr\ArrayMaxDecorator;
-use AleksandrBushuev\Schema\Type\Arr\ArrayMinDecorator;
-use AleksandrBushuev\Schema\Type\Arr\ArrayType;
-use AleksandrBushuev\Schema\Type\Arr\IArrayType;
-use AleksandrBushuev\Schema\Type\ISchemaType;
+use Type\Arr\ArrayMaxDecorator;
+use Type\Arr\ArrayMinDecorator;
+use Type\Arr\ArrayType;
+use Type\Arr\IArrayType;
+use Type\ISchemaType;
 
 class ArrayBuilder implements ISchemaTypeBuilder
 {

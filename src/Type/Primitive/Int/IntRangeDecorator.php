@@ -1,13 +1,13 @@
 <?php
 
 
-namespace AleksandrBushuev\Schema\Type\Primitive\Int;
+namespace Type\Primitive\Int;
 
 
-use AleksandrBushuev\Schema\CheckResult;
+use CheckResult;
 
-use AleksandrBushuev\Schema\Type\Primitive\NumericRangeDecorator;
-use AleksandrBushuev\Schema\Visitor\IVisitor;
+use Type\Primitive\NumericRangeDecorator;
+use Visitor\IVisitor;
 
 abstract class IntRangeDecorator extends NumericRangeDecorator implements IIntType
 {
@@ -26,7 +26,7 @@ abstract class IntRangeDecorator extends NumericRangeDecorator implements IIntTy
             : $result;
     }
 
-    public function accept(IVisitor $visitor, &$input) {
+    public function accept(IVisitor $visitor, $input) {
         $visitor->visitPrimitive($this, $input);
     }
 }

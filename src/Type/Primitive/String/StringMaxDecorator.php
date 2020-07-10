@@ -1,15 +1,18 @@
 <?php
 
 
-namespace AleksandrBushuev\Schema\Type\Primitive\String;
+namespace Type\Primitive\String;
 
 
-use AleksandrBushuev\Schema\CheckResult;
+use CheckResult;
+use Error\CustomError;
 
 class StringMaxDecorator extends StringRangeDecorator
 {
 
     protected function checkCount($input): CheckResult {
-        return strlen($input) <= $this->count;
+        return strlen($input) <= $this->count
+            ? new CheckResult(true)
+            : new CheckResult(false, new CustomError("Too long string"));
     }
 }

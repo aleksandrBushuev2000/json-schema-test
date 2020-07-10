@@ -1,8 +1,8 @@
 <?php
 
-namespace AleksandrBushuev\Schema\Type\Primitive;
+namespace Type\Primitive;
 
-use AleksandrBushuev\Schema\CheckResult;
+use CheckResult;
 
 abstract class NumericRangeDecorator {
 

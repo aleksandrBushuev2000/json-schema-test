@@ -1,11 +1,11 @@
 <?php
 
 
-namespace AleksandrBushuev\Schema\Builder;
+namespace Builder;
 
 
-use AleksandrBushuev\Schema\Type\ISchemaType;
-use AleksandrBushuev\Schema\Type\ObjectField\ObjectField;
+use Type\ISchemaType;
+use Type\ObjectField\ObjectField;
 
 class FieldBuilder implements ISchemaTypeBuilder
 {

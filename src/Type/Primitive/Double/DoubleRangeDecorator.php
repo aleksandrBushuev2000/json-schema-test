@@ -1,12 +1,12 @@
 <?php
 
 
-namespace AleksandrBushuev\Schema\Type\Primitive\Double;
+namespace Type\Primitive\Double;
 
 
-use AleksandrBushuev\Schema\CheckResult;
-use AleksandrBushuev\Schema\Type\Primitive\NumericRangeDecorator;
-use AleksandrBushuev\Schema\Visitor\IVisitor;
+use CheckResult;
+use Type\Primitive\NumericRangeDecorator;
+use Visitor\IVisitor;
 
 abstract class DoubleRangeDecorator extends NumericRangeDecorator implements IDoubleType
 {
@@ -21,7 +21,7 @@ abstract class DoubleRangeDecorator extends NumericRangeDecorator implements IDo
             : $result;
     }
 
-    public function accept(IVisitor $visitor, &$input) {
+    public function accept(IVisitor $visitor, $input) {
         $visitor->visitPrimitive($this, $input);
     }
 }

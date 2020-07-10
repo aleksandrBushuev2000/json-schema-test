@@ -1,8 +1,8 @@
 <?php
 
-namespace AleksandrBushuev\Schema\Type\Arr;
+namespace Type\Arr;
 
-use AleksandrBushuev\Schema\Type\ISchemaType;
+use Type\ISchemaType;
 
 interface IArrayType extends ISchemaType
 {

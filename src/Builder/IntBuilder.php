@@ -1,13 +1,13 @@
 <?php
 
 
-namespace AleksandrBushuev\Schema\Builder;
+namespace Builder;
 
 
-use AleksandrBushuev\Schema\Type\ISchemaType;
-use AleksandrBushuev\Schema\Type\Primitive\Int\IntMaxDecorator;
-use AleksandrBushuev\Schema\Type\Primitive\Int\IntMinDecorator;
-use AleksandrBushuev\Schema\Type\Primitive\Int\IntType;
+use Type\ISchemaType;
+use Type\Primitive\Int\IntMaxDecorator;
+use Type\Primitive\Int\IntMinDecorator;
+use Type\Primitive\Int\IntType;
 
 class IntBuilder implements ISchemaTypeBuilder
 {

@@ -1,15 +1,13 @@
 <?php
 
-namespace AleksandrBushuev\Schema;
-
-use AleksandrBushuev\Schema\Builder\ArrayBuilder;
-use AleksandrBushuev\Schema\Builder\BoolBuilder;
-use AleksandrBushuev\Schema\Builder\DoubleBuilder;
-use AleksandrBushuev\Schema\Builder\FieldBuilder;
-use AleksandrBushuev\Schema\Builder\IntBuilder;
-use AleksandrBushuev\Schema\Builder\ISchemaTypeBuilder;
-use AleksandrBushuev\Schema\Builder\ObjectBuilder;
-use AleksandrBushuev\Schema\Builder\StringBuilder;
+use Builder\ArrayBuilder;
+use Builder\BoolBuilder;
+use Builder\DoubleBuilder;
+use Builder\FieldBuilder;
+use Builder\IntBuilder;
+use Builder\ISchemaTypeBuilder;
+use Builder\ObjectBuilder;
+use Builder\StringBuilder;
 
 class Factory
 {

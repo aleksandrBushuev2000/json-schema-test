@@ -1,9 +1,9 @@
 <?php
 
 
-namespace AleksandrBushuev\Schema\Builder;
+namespace Builder;
 
-use AleksandrBushuev\Schema\Type\ISchemaType;
+use Type\ISchemaType;
 
 interface ISchemaTypeBuilder
 {
