@@ -4,7 +4,6 @@
 namespace AleksandrBushuev\Schema\Type\Primitive\Int;
 
 
-interface IIntType
-{
+use AleksandrBushuev\Schema\Type\Primitive\IPrimitive;
 
-}
+interface IIntType extends IPrimitive {}

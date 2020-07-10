@@ -1,7 +1,7 @@
 <?php
 
 
-namespace AleksandrBuhsuev\Schema\Error;
+namespace AleksandrBushuev\Schema\Error;
 
 
 interface IError

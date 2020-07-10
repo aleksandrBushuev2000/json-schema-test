@@ -4,7 +4,12 @@
 namespace AleksandrBushuev\Schema\Type\Primitive\String;
 
 
-class StringMinDecorator
+use AleksandrBushuev\Schema\CheckResult;
+
+class StringMinDecorator extends StringRangeDecorator
 {
 
+    protected function checkCount($input): CheckResult {
+        return strlen($input) >= $this->count;
+    }
 }

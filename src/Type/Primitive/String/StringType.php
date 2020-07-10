@@ -1,12 +1,12 @@
 <?php
 
 
-namespace AleksandrBuhsuev\Schema\Type\Primitive\String;
+namespace AleksandrBushuev\Schema\Type\Primitive\String;
 
 
-use AleksandrBuhsuev\Schema\CheckResult;
-use AleksandrBuhsuev\Schema\Error\TypeMismatchError;
-use AleksandrBuhsuev\Schema\Visitor\IVisitor;
+use AleksandrBushuev\Schema\CheckResult;
+use AleksandrBushuev\Schema\Error\TypeMismatchError;
+use AleksandrBushuev\Schema\Visitor\IVisitor;
 
 class StringType implements IStringType
 {

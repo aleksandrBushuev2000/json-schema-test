@@ -4,7 +4,6 @@
 namespace AleksandrBushuev\Schema\Type\Primitive\Double;
 
 
-interface IDoubleType
-{
+use AleksandrBushuev\Schema\Type\Primitive\IPrimitive;
 
-}
+interface IDoubleType extends IPrimitive {}

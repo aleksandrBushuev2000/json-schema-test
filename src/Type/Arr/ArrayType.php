@@ -1,18 +1,22 @@
 <?php
 
 
-namespace AleksandrBuhsuev\Schema\Type\Arr;
+namespace AleksandrBushuev\Schema\Type\Arr;
 
 
-use AleksandrBuhsuev\Schema\CheckResult;
-use AleksandrBuhsuev\Schema\Error\AssocArrayError;
-use AleksandrBuhsuev\Schema\Type\ISchemaType;
-use AleksandrBuhsuev\Schema\Error\TypeMismatchError;
-use AleksandrBuhsuev\Schema\Visitor\IVisitor;
+use AleksandrBushuev\Schema\CheckResult;
+use AleksandrBushuev\Schema\Error\AssocArrayError;
+use AleksandrBushuev\Schema\Type\ISchemaType;
+use AleksandrBushuev\Schema\Error\TypeMismatchError;
+use AleksandrBushuev\Schema\Visitor\IVisitor;
 
 class ArrayType implements IArrayType
 {
     private ISchemaType $childType;
+
+    public function __construct(ISchemaType $childType) {
+        $this->childType = $childType;
+    }
 
     public function getChildType(): ISchemaType {
         return $this->childType;

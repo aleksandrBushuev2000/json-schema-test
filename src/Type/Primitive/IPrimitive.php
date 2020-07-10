@@ -2,6 +2,6 @@
 
 namespace AleksandrBushuev\Schema\Type\Primitive;
 
-use AleksandrBuhsuev\Schema\Type\ISchemaType;
+use AleksandrBushuev\Schema\Type\ISchemaType;
 
 interface IPrimitive extends ISchemaType { }

@@ -1,15 +1,15 @@
 <?php
 
 
-namespace AleksandrBuhsuev\Schema\Object;
+namespace AleksandrBushuev\Schema\Object;
 
 
-use AleksandrBuhsuev\Schema\CheckResult;
-use AleksandrBuhsuev\Schema\Error\TypeMismatchError;
-use AleksandrBuhsuev\Schema\Type\ObjectField\ObjectField;
-use AleksandrBuhsuev\Schema\Visitor\IVisitor;
+use AleksandrBushuev\Schema\CheckResult;
+use AleksandrBushuev\Schema\Error\TypeMismatchError;
+use AleksandrBushuev\Schema\Type\ObjectField\ObjectField;
+use AleksandrBushuev\Schema\Visitor\IVisitor;
 
-use AleksandrBuhsuev\Schema\Type\ISchemaType;
+use AleksandrBushuev\Schema\Type\ISchemaType;
 
 use stdClass;
 

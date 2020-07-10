@@ -1,9 +1,9 @@
 <?php
 
-namespace AleksandrBuhsuev\Schema\Type;
+namespace AleksandrBushuev\Schema\Type;
 
-use AleksandrBuhsuev\Schema\CheckResult;
-use AleksandrBuhsuev\Schema\Visitor\IVisitor;
+use AleksandrBushuev\Schema\CheckResult;
+use AleksandrBushuev\Schema\Visitor\IVisitor;
 
 interface ISchemaType
 {

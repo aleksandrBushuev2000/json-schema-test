@@ -1,12 +1,12 @@
 <?php
 
 
-namespace AleksandrBuhsuev\Schema\Type\Arr;
+namespace AleksandrBushuev\Schema\Type\Arr;
 
 
-use AleksandrBuhsuev\Schema\CheckResult;
-use AleksandrBuhsuev\Schema\Type\ISchemaType;
-use AleksandrBuhsuev\Schema\Visitor\IVisitor;
+use AleksandrBushuev\Schema\CheckResult;
+use AleksandrBushuev\Schema\Type\ISchemaType;
+use AleksandrBushuev\Schema\Visitor\IVisitor;
 
 abstract class ArrayRangeDecorator implements IArrayType
 {
@@ -30,7 +30,7 @@ abstract class ArrayRangeDecorator implements IArrayType
     }
 
     public function accept(IVisitor $visitor, & $input) {
-        $this->parent->accept($visitor, $input);
+        $visitor->visitArray($this, $input);
     }
 
     protected abstract function checkCount($input) : CheckResult;

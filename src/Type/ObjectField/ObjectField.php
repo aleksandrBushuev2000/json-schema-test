@@ -1,11 +1,11 @@
 <?php
 
-namespace AleksandrBuhsuev\Schema\Type\ObjectField;
+namespace AleksandrBushuev\Schema\Type\ObjectField;
 
-use AleksandrBuhsuev\Schema\CheckResult;
-use AleksandrBuhsuev\Schema\Error\CustomError;
-use AleksandrBuhsuev\Schema\Type\ISchemaType;
-use AleksandrBuhsuev\Schema\Visitor\IVisitor;
+use AleksandrBushuev\Schema\CheckResult;
+use AleksandrBushuev\Schema\Error\CustomError;
+use AleksandrBushuev\Schema\Type\ISchemaType;
+use AleksandrBushuev\Schema\Visitor\IVisitor;
 
 use stdClass;
 
@@ -47,6 +47,10 @@ class ObjectField implements ISchemaType
         $this->defaultValue = $value;
     }
 
+    public function __construct(string $key, ISchemaType $value) {
+        $this->key = $key;
+        $this->value = $value;
+    }
 
     /**
      * @var array|stdClass $input

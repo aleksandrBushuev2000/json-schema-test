@@ -1,11 +1,11 @@
 <?php
 
 
-namespace AleksandrBuhsuev\Schema\Type\Arr;
+namespace AleksandrBushuev\Schema\Type\Arr;
 
 
-use AleksandrBuhsuev\Schema\CheckResult;
-use AleksandrBuhsuev\Schema\Error\CustomError;
+use AleksandrBushuev\Schema\CheckResult;
+use AleksandrBushuev\Schema\Error\CustomError;
 
 class ArrayMaxDecorator extends ArrayRangeDecorator
 {
