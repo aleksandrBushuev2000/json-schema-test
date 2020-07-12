@@ -76,7 +76,7 @@ class ObjectField implements ISchemaType
             : new CheckResult(false, new CustomError("Missing Field: ".$key));
     }
 
-    public function accept(IVisitor $visitor, $input) {
+    public function accept(IVisitor $visitor, & $input) {
         $visitor->visitField($this, $input);
     }
 }

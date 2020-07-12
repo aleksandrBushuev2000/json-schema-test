@@ -29,8 +29,8 @@ abstract class ArrayRangeDecorator implements IArrayType
             : $result;
     }
 
-    public function accept(IVisitor $visitor, $input) {
-        $visitor->visitArray($this, $input);
+    public function accept(IVisitor $visitor, & $input) {
+        $visitor->visitArray($this,$input);
     }
 
     protected abstract function checkCount($input) : CheckResult;

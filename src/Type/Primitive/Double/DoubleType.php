@@ -18,7 +18,7 @@ class DoubleType implements IDoubleType
             : new CheckResult(false, new TypeMismatchError("double", gettype($input)));
     }
 
-    public function accept(IVisitor $visitor, $input) {
+    public function accept(IVisitor $visitor, & $input) {
         $visitor->visitPrimitive($this, $input);
     }
 }

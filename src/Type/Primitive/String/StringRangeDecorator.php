@@ -24,7 +24,7 @@ abstract class StringRangeDecorator implements IStringType
             : $result;
     }
 
-    public function accept(IVisitor $visitor, $input) {
+    public function accept(IVisitor $visitor, & $input) {
         $visitor->visitPrimitive($this, $input);
     }
 

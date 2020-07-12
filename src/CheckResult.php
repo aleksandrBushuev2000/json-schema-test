@@ -15,6 +15,10 @@ class CheckResult
 
     private ?IError $error;
 
+    public function getError() : ?IError {
+        return $this->error;
+    }
+
     public function getErrorMessage() : ?IError {
         return $this->error;
     }

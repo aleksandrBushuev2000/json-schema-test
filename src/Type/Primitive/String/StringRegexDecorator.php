@@ -32,7 +32,7 @@ class StringRegexDecorator implements IStringType
         }
     }
 
-    public function accept(IVisitor $visitor, $input) {
+    public function accept(IVisitor $visitor, & $input) {
         $visitor->visitPrimitive($this, $input);
     }
 }

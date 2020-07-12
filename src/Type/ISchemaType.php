@@ -8,5 +8,5 @@ use AleksandrBushuev\Schema\Visitor\IVisitor;
 interface ISchemaType
 {
     public function check($input) : CheckResult;
-    public function accept(IVisitor $visitor, $input);
+    public function accept(IVisitor $visitor, & $input);
 }

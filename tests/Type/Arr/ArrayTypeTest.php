@@ -20,7 +20,7 @@ class ArrayTypeTest extends TestCase
     */
     public function testCheck($input, bool $expected) {
         $schemaType = new class implements ISchemaType {
-            public function accept(IVisitor $visitor, $input) {}
+            public function accept(IVisitor $visitor, & $input) {}
             public function check($input): CheckResult {
                 return new CheckResult(true);
             }

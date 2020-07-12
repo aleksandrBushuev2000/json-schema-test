@@ -20,7 +20,7 @@ class ArrayMinDecoratorTest extends TestCase
      */
     public function testCorrectWork(array $input, int $min, bool $result) {
         $schemaType = new class implements ISchemaType {
-            public function accept(IVisitor $visitor, $input) {}
+            public function accept(IVisitor $visitor, & $input) {}
             public function check($input): CheckResult {
                 return new CheckResult(true);
             }

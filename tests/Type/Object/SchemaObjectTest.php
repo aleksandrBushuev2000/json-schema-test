@@ -27,7 +27,8 @@ class SchemaObjectTest extends TestCase
             [new stdClass(), true],
             [["key" => "value"], true],
             [[], true],
-            [6, false]
+            [6, false],
+            ["string", false]
         ];
     }
 }

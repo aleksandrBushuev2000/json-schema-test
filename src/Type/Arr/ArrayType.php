@@ -32,7 +32,7 @@ class ArrayType implements IArrayType
         return new CheckResult(true);
     }
 
-    public function accept(IVisitor $visitor, $input) : void {
-        $visitor->visitArray($this, $input);
+    public function accept(IVisitor $visitor, & $input) : void {
+        $visitor->visitArray($this,  $input);
     }
 }

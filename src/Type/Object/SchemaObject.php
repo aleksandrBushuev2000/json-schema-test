@@ -46,7 +46,7 @@ class SchemaObject implements ISchemaType
         }
     }
 
-    public function accept(IVisitor $visitor, $input) {
+    public function accept(IVisitor $visitor, & $input) {
         $visitor->visitObject($this, $input);
     }
 }

@@ -26,7 +26,7 @@ abstract class IntRangeDecorator extends NumericRangeDecorator implements IIntTy
             : $result;
     }
 
-    public function accept(IVisitor $visitor, $input) {
+    public function accept(IVisitor $visitor, & $input) {
         $visitor->visitPrimitive($this, $input);
     }
 }

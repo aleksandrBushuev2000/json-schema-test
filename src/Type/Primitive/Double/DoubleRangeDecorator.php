@@ -21,7 +21,7 @@ abstract class DoubleRangeDecorator extends NumericRangeDecorator implements IDo
             : $result;
     }
 
-    public function accept(IVisitor $visitor, $input) {
-        $visitor->visitPrimitive($this, $input);
+    public function accept(IVisitor $visitor, & $input) {
+        $visitor->visitPrimitive($this,  $input);
     }
 }

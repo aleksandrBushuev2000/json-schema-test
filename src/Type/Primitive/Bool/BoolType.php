@@ -16,7 +16,7 @@ class BoolType implements IPrimitive
             : new CheckResult(false, new TypeMismatchError("bool", gettype($input)));
     }
 
-    public function accept(IVisitor $visitor, $input) {
-        $visitor->visitPrimitive($this, $input);
+    public function accept(IVisitor $visitor, & $input) {
+        $visitor->visitPrimitive($this,  $input);
     }
 }

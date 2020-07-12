@@ -17,7 +17,7 @@ class StringType implements IStringType
             : new CheckResult(false, new TypeMismatchError("string", gettype($input)));
     }
 
-    public function accept(IVisitor $visitor, $input) {
-        $visitor->visitPrimitive($this, $input);
+    public function accept(IVisitor $visitor, & $input) {
+        $visitor->visitPrimitive($this,  $input);
     }
 }
